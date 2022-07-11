@@ -1,0 +1,339 @@
+<div class="row">
+  <div class="col-12 col-md-12">
+
+      <div class="card border-primary">
+      <div class="card-header text-white bg-primary">
+          <h6> MODIFICACION DE MODUS OPERANDO Y RUTAS/LUGAR</h6>
+      </div>
+      <div class="card-body">
+
+          <form>
+
+              <div>
+                  <!-- <div class="card-header text-white bg-primary">
+                      Origen de Requerimiento EDC
+                  </div> -->
+                  <div class="card-body">
+                      
+                      <div class="row mt-20">
+                          <div class="col-md-12">
+                              <div class="form-group row">
+                                <div class="col-md-3">
+                                  <label class="form-control-sm"> * Ambito de Operacion</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label" for="flexRadioDefault1">
+                                        Nacional
+                                      </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                      <label class="form-check-label" for="flexRadioDefault2">
+                                        Internacional
+                                      </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                  <button type="button" class="btn btn-primary btn-sm">
+                                    Limpiar
+                                  </button>
+                                </div>
+                                <div class="col-md-2">
+                                  <button type="button" class="btn btn-primary btn-sm">
+                                    Salir
+                                  </button>
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                <div class="col-md-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <div class="col-md-1">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Aduana
+                                  </label>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                  <select class="form-control form-control-sm" 
+                                  formControlName="selTipoResolucion">
+                                      <option value="">Seleccionar</option>
+                                      <option>xxxxx</option>
+                                  </select>
+                                  <div class="text-danger-size">xxxxxxx</div>
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                <div class="col-md-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <div class="col-md-1">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Ruta
+                                  </label>
+                                </div>
+                                
+                                <div class="col-md-10">
+                                  <input type="text" class="form-control form-control-sm"  
+                                  name="numRuta"  
+                                  maxlength="100" onlyNumber="true"
+                                  placeholder="Ingresar ruta minima 3 caracteres"/>
+                                  <small id="passwordHelpInline" class="text-muted align-items-end">
+                                    (0/100)
+                                  </small>
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                <div class="col-md-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <div class="col-md-1">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Ubigeo
+                                  </label>
+                                </div>
+                                
+                                <div class="col-md-1">
+                                  <label class="form-check-label text-right" for="flexCheckDefault">
+                                    Departamento
+                                  </label>
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Provincia
+                                  </label>
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Distrito
+                                  </label>
+                                </div>
+                                <div class="col-md-5">
+                                  <select class="form-control form-control-sm" 
+                                  formControlName="selTipoResolucion">
+                                      <option value="">Seleccionar</option>
+                                      <option>xxxxx</option>
+                                  </select>
+                                  <select class="form-control form-control-sm" 
+                                  formControlName="selTipoResolucion">
+                                      <option value="">Seleccionar</option>
+                                      <option>xxxxx</option>
+                                  </select>
+                                  <select class="form-control form-control-sm" 
+                                  formControlName="selTipoResolucion">
+                                      <option value="">Seleccionar</option>
+                                      <option>xxxxx</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-4">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-label">Detalle</label>
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="2"
+                                    placeholder="Ingresar detalle minimo de 20 caracteres"
+                                  ></textarea>
+                                  <small id="passwordHelpInline" class="text-muted align-items-end">
+                                    (0/100)
+                                  </small>
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                <div class="col-md-auto">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <div class="col-md-2">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Fecha Numeracion
+                                  </label>
+                                </div>
+                                <div class="col-md-auto">
+                                  <label class="control-label" for="date">Desde</label>
+                                </div>
+                                <div class="col-md-2">
+                                  <span class="fa fa-calendar" id="fa-1"></span>
+                                  <input type="text" id="end" class="form-control text-left ml-2">
+                                </div>
+                            </div>
+
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm">Tipo de Requerimiento EDC:</label>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <select class="form-control form-control-sm"
+                                      formControlName="selTipoReq">
+                                          <option value=''>Seleccionar</option>
+                                          <option >xxxxx</option>
+                                      </select>
+                                      <div class="text-danger-size">xxxxxxxx</div>
+                                  </div>
+                              </div>
+
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm">Tipo de Resolución:</label>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <select class="form-control form-control-sm" 
+                                      formControlName="selTipoResolucion">
+                                          <option value="">Seleccionar</option>
+                                          <option>xxxxx</option>
+                                      </select>
+                                      <div class="text-danger-size">xxxxxxx</div>
+                                  </div>
+                              </div>
+
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm">Nro. de Resolución:</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <select class="form-control form-control-sm" 
+                                      formControlName="selNroResol">
+                                          <option value="">Seleccionar</option>
+                                          <option>xxxx</option>
+                                      </select>   
+                                      <div class="text-danger-size">xxxxxxx</div> 
+                                  </div>
+                                  <div class="col-md-2">
+                                      <input type="text"  appStringUtils isAlphaNumeric="true"
+                                      formControlName="area" 
+                                      placeholder="Area" class="form-control form-control-sm text-center"
+                                      maxlength="6"/>
+                                      <div class="text-danger-size">xxxxxxx</div> 
+                                      <div class="text-danger-size">xxxx</div>
+                                  </div>
+                                  <div class="col-md-2">
+                                      <input type="text" appStringUtils onlyNumber="true" 
+                                      formControlName="anho" 
+                                      placeholder="Año" class="form-control form-control-sm text-center" 
+                                      maxlength="4"/>
+                                      <div class="text-danger-size">xxxxx</div> 
+                                      <div class="text-danger-size">xxxxxxxxxx</div>
+                                  </div>
+                                  <div class="col-md-2">
+                                      <input type="text" appStringUtils onlyNumber="true"   
+                                      formControlName="numero" 
+                                      placeholder="Número" class="form-control form-control-sm text-center" 
+                                      maxlength="6"/>
+                                      <div class="text-danger-size">xxxxxx</div> 
+                                  </div>
+                                  <div class="col-md-1">
+                                      <span ><i class="fas fa-check text-success"></i></span>
+                                  </div>
+                              </div>
+
+                              <div class="col-md-10 offset-sm-2">
+                                  <div class="text-danger-size mb-3">xxxxxxxx</div>
+                              </div>
+
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm">Sustento:</label>
+                                  </div>
+                                  <div class="col-md-10">
+                                      <textarea formControlName="sustento" 
+                                      rows="3" maxlength="500" class="form-control"></textarea>
+                                      <div class="text-danger-size"></div> 
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <br>
+
+              <div class="card border-primary">
+                  <div class="card-header text-white bg-primary">
+                      Datos del Operador de Comercio
+                  </div>
+                  <div class="card-body">
+
+                      <div class="row mt-20">
+                          <div class="col-md-12">
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm" maxlength="11">RUC:</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <input type="text" class="form-control form-control-sm"  
+                                      name="numRuc"  
+                                      maxlength="11" appStringUtils onlyNumber="true"
+                                      placeholder="N&uacute;mero"/>
+                                      <div class="text-danger-size">xxxxxxxx</div>
+                                      <div class="text-danger-size" >xxxxxxxxx</div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-md-12">
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm" for="razonSocial">Razón Social:</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <input type="text" class="form-control form-control-sm" 
+                                      name="nombreContribuyenteRuc" 
+                                      formControlName="nombreContribuyenteRuc" 
+                                      readonly/>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <span ><i class="fas fa-check text-success"></i></span>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-md-12">
+                              <div class="form-group row">
+                                  <div class="col-md-2 text-left">
+                                      <label class="form-control-sm" for="tipoOperador">Tipo de Operador:</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <select class="form-control form-control-sm" 
+                                      name="tipoOperador">
+                                          <option value="">Seleccionar</option>
+                                          <option>xxx</option>
+                                      </select> 
+                                      <!-- <div class="text-danger-size">{{ getErrorMensaje(formCreaReq, 'tipoOperador', CUS02_EXCP_011) }}</div>     -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  
+                  </div>
+              </div>
+
+              <br>
+
+              <div class="row mt-3">
+                  <div class="col-12 col-md-12">      
+                      <!-- <app-mensaje-alerta-aviso></app-mensaje-alerta-aviso>  -->
+                  </div>
+              </div>
+
+              <!-- <app-div-mensaje-error [mensajeError]="errorMensaje"></app-div-mensaje-error> -->
+
+              <div class="row mt-20 text-center">
+                  <div class="col-md-12">
+                      <button type="button" class="btn btn-primary mr-1">
+                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" ></span> 
+                          Generar Requerimiento EDC
+                      </button>
+                      <button type="button" class="btn btn-primary mr-1">
+                          Limpiar
+                      </button>
+                  </div>
+              </div>  
+
+          </form>
+
+      </div>  
+  </div>  
+  </div>
+</div>

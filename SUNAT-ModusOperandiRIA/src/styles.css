@@ -1,0 +1,159 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding-bottom: 50px;
+}
+
+label, span, p {
+    font-size: 14px;
+}
+
+.img-logo {
+    width: 160px;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #0063AE !important;
+    border-color: #0062cc !important;
+}
+.bg-primary{
+    background-color: #0063AE !important;
+}
+.border-primary {
+    border-color: #0063AE !important;
+}
+.badge {
+    font-size : 100% !important;
+}
+
+.text-danger-size {
+    color: #dc3545!important;
+    font-size: 12px;
+}
+
+.input-transparent{
+    background-color:transparent !important;
+    border:none !important;
+    resize: none;
+    padding: 0px;
+ }
+ 
+input.input-transparent{
+    height: 23px !important;
+ }
+
+ .input-transparent:focus{
+    /* border-color: #ffffff; */
+    border:none !important;
+    outline: 0;
+    box-shadow: none;
+ }
+
+ .input-descargar-archivo{
+    background-color:transparent !important;
+    border:none !important;
+ }
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+ngb-timepicker.ng-pristine.ng-invalid.ng-touched.is-invalid input.form-control{
+    border-color: #dc3545;
+    padding-right: 1.2em;
+}
+
+#progressOverlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 100000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+  }
+
+.modal-header button.close {
+    opacity: 1;
+    color: white;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+    padding: .25rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+}
+
+.ui-paginator-left-content {
+    padding-top: 7px !important;
+    padding-left: 7px !important;
+    position: absolute !important;
+}
+
+.ui-paginator-left-content span {
+    font-size: 13px;
+}
+.ui-tooltip {
+    z-index: 99999 !important;
+}
+
+body .ui-table .ui-table-thead > tr > th {
+    color: #FFFFFF !important;
+    background-color: #0063AE !important;
+}
+
+/* Inicio Placeholder */
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    font-size: 12px;
+}
+
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    font-size: 12px;
+}
+
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    font-size: 12px;
+}
+
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    font-size: 12px;
+}
+
+/* Fin Placeholder */

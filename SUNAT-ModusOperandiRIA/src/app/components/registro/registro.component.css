@@ -1,0 +1,18 @@
+.bg-primary{
+    background-color: #0063AE !important;
+}
+.border-primary {
+    border-color: #0063AE !important;
+}
+.container{
+    margin-top: 50px;
+}
+.form-group{
+    margin-top: 12px;
+}
+#form-primer{
+    margin-top: 0;
+}
+.card-body{
+    padding: 10px;
+}
