@@ -10,3 +10,12 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+/*
+
+npm i webpack-bundle-analyzer -save-dev
+
+npm run build:stats
+npm run analyze
+
+*/

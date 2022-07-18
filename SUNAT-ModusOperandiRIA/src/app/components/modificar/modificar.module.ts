@@ -2,20 +2,22 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { ConsultarComponent } from './consultar.component';
-import { ConsultarRouter } from './consultar.router';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRouter } from 'src/app/app.router';
 import { RouterModule } from '@angular/router';
+import { ModificarRouter } from './modificar.router';
+import { ModificarComponent } from './modificar.component';
+import { SelectModificarComponent } from './select-modificar/select-modificar.component';
 
 @NgModule({
   declarations: [
-    ConsultarComponent
+    ModificarComponent,
+    SelectModificarComponent
   ], 
-  entryComponents: [],
+  entryComponents: [SelectModificarComponent],
   imports: [ 
-    ConsultarRouter,
+    ModificarRouter,
     CommonModule, 
     FormsModule, ReactiveFormsModule,
     NgbModule,
@@ -25,4 +27,4 @@ import { RouterModule } from '@angular/router';
     MatPaginatorModule
   ]
 })
-export class ConsultarModule { }
+export class ModificarModule { }

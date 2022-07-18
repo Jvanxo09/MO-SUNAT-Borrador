@@ -4,19 +4,25 @@
   <!-- <app-mantenimiento></app-mantenimiento> -->
   <!-- <app-registro></app-registro> -->
   <!-- <app-modificar></app-modificar> -->
-   
-  <!-- <a routerLink ="consultar">Consultar</a>
-</div> -->
+ <!-- </div> -->
 
- 
-<!-- <main >
-    <router-outlet  ></router-outlet>
-</main>
-  -->
-
-<ul>    
-    <li><a [routerLink]="['/consultar']">consultar</a></li> 
-</ul>
-   
-
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" [routerLink]="['/consultar']">Consultar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/mantenimiento']">Mantenimiento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/registro']">Registro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/modificar']">Modificar</a>
+    </li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>  
